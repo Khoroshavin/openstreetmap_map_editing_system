@@ -1,0 +1,178 @@
+/* ------------------------------- PAGE SIGIN ------------------------------- */
+.signin__container{
+  max-width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login__wrap_img{
+  display: flex;
+  justify-content: center;
+}
+
+.form__signin img {
+  width: 5em;
+  height: 5em;
+}
+
+.form__signin .alert{
+  margin-top: 1em;
+  text-align: center;
+}
+
+.nav a:hover {
+  color: #1A95FF;
+}
+
+/* ---------------------------- PAGE ADMIN PANEL ----------------------------- */
+body {
+  font-size: .875rem;
+}
+
+/** Sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/** Navbar */
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* FIXME: ПОФИКСИТЬ  */
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-nav li{
+  margin-right: 1em;
+  font-size: 1.2em;
+}
+
+
+/* ---------------------------------- utils --------------------------------- */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/** modals */
+.modal .delete__username{
+  font-weight: 700;
+}
+
+.modal p{
+  font-size: 1.2em;
+}
+/** /modals */
+
+.tox-tinymce {
+  min-height: 300px !important;
+}
+
+.alert {
+  margin: 0;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+}
+
+/* -------------------------------- main page ------------------------------- */
+#mapid {
+  height: 500px;
+}
+
+#mapid img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* #modalBody {
+  overflow: scroll;
+} */
+
+.modal-body img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* -------------------------------- / main page ----------------------------- */

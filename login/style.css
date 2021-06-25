@@ -1,0 +1,20 @@
+body {  
+	background-image: url(background.png);    
+	background-size: cover; 
+	background-attachment: fixed;  
+	display: flex;   
+	align-items: center;  
+	height: 100vh;
+}
+
+.error{
+	color: red;
+	text-align: center;
+}
+
+.card {
+  color: white;
+	background-color: rgba(245, 245, 245, 0.2);
+}
+
+.card-header, .card-footer { opacity: 1}
